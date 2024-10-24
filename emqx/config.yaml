@@ -1,3 +1,4 @@
+---
 name: EMQX
 version: dev
 slug: emqx
@@ -11,15 +12,15 @@ init: false
 panel_icon: mdi:pipe
 panel_title: EMQX
 arch:
-- aarch64
-- amd64
+  - aarch64
+  - amd64
 map:
-- ssl
-- addon_config:rw
+  - ssl
+  - addon_config:rw
 options:
   env_vars: []
 host_network: true
 schema:
   env_vars:
-  - name: match(^EMQX_([A-Z0-9_])+$)
-    value: str
+    - name: match(^EMQX_([A-Z0-9_])+$)
+      value: str
